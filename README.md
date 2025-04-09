@@ -68,6 +68,9 @@ Fully styled with a colorful dashboard look
 
 🌐 URLs
 App	URL	Description
+
 Flask	/	Homepage with link to form
+
 Flask	/greet	Form to enter name and age
+
 Django	/inventory/	List + add inventory items
