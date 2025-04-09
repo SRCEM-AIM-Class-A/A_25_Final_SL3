@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="{% static 'inventory/styles.css' %}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>📦 Inventory Dashboard</h1>
+        </header>
+
+        <section class="form-section">
+            <h2>Add New Item</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">➕ Add Item</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>📝 Item List</h2>
+            <ul class="item-list">
+                {% for item in items %}
+                    <li>
+                        <span class="item-name">{{ item.name }}</span>
+                        <span class="item-desc">{{ item.description }}</span>
+                    </li>
+                {% empty %}
+                    <li class="empty-msg">No items in inventory yet.</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

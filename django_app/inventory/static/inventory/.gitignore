@@ -1,0 +1,77 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+*.egg-info/
+.eggs/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+db.sqlite3
+media/
+static/
+staticfiles/
+static_root/
+
+# Flask stuff
+instance/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Environment vars
+.env
+.env.*
+
+# Pip
+pip-log.txt
+pip-delete-this-folder.txt
+
+# Coverage & test
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Git backup files
+*.orig
+*.bak
+*.swp
+*.tmp
+
+# Docker (optional)
+docker-compose.override.yml
+
+# Migrations (optional)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
